@@ -1,0 +1,21 @@
+{
+  "name": "typescript-for-javascript-developers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikd-gifu/typescript-for-javascript-developers.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ikd-gifu/typescript-for-javascript-developers/issues"
+  },
+  "homepage": "https://github.com/ikd-gifu/typescript-for-javascript-developers#readme"
+}
