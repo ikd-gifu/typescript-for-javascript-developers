@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/ikd-gifu/typescript-for-javascript-developers/issues"
   },
-  "homepage": "https://github.com/ikd-gifu/typescript-for-javascript-developers#readme"
+  "homepage": "https://github.com/ikd-gifu/typescript-for-javascript-developers#readme",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
 }
