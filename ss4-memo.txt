@@ -1,0 +1,37 @@
+対話なしでデフォルト値の package.json を一発生成する
+npm init -y
+
+npm 自身を「グローバルインストール」で最新版などにアップデートするコマンド
+nvm, fnm などのバージョンマネージャでインストールしている場合はadmin権限不要
+npm install -g npm
+
+最新バージョン確認
+npm info typescript
+
+TSは開発環境のみにインストール
+「このプロジェクトの開発用ツールとして、バージョン 5.9.3 の TypeScript をローカルインストールし、devDependencies に記録する」
+npm install --save-dev typescript@5.9.3
+
+これにより./node_modules/.binにtscコマンドが配置される
+
+srcディレクトリを作成
+install-typescript.tsファイルを作成
+
+コマンド実行（TSファイルをJSにコンパイル）
+/node_modules/.bin/tsc ./src/install-typescript.ts
+
+「カレントプロジェクトの node_modules/.bin にあるコマンドを優先的に探して実行するラッパー」
+npx tsc ./src/install-typescript.ts
+
+ts-node
+tscコマンドでTSをコンパイルし、コンパイルされたJSをnodeで実行するまでをコマンドで実行する
+
+npx ts-node src/install-typescript.ts
+
+ローカル環境では/src/tsconfig.jsonが必要（ファイルのみでも動く）
+node -v v24.12.0
+npm -v 11.6.2
+nvm -v 0.39.5
+npx ts-node -v v10.9.2
+
+ts-node@10.9.2 はTypeScript 4 系想定で作られており、比較的新しい Node（v18 以降）の挙動や、TypeScript の新しめのデフォルト設定との組み合わせで細かい不整合が出ることがあり

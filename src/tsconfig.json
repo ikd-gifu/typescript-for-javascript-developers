@@ -12,3 +12,4 @@
 //   "include": ["src/**/*"],
 //   "exclude": ["node_modules"]
 // }
+// ローカル環境では/src/tsconfig.jsonが必要（ファイルのみでも動く）
