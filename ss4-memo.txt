@@ -35,3 +35,14 @@ nvm -v 0.39.5
 npx ts-node -v v10.9.2
 
 ts-node@10.9.2 はTypeScript 4 系想定で作られており、比較的新しい Node（v18 以降）の挙動や、TypeScript の新しめのデフォルト設定との組み合わせで細かい不整合が出ることがあり
+
+ts-node-dev
+TSファイルを監視、変更されたら自動でコンパイルし実行
+GitHub - wclr/ts-node-dev: Compiles your TS app and restarts when files are modified.
+
+tsx ts-node-dev --respawn src/install-typescript.ts
+止める
+control + c
+
+/package.jsonにタスクを登録しておく
+npm run dev src/install-typescript.ts
