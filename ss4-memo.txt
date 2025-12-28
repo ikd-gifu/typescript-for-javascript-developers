@@ -41,6 +41,10 @@ TSファイルを監視、変更されたら自動でコンパイルし実行
 GitHub - wclr/ts-node-dev: Compiles your TS app and restarts when files are modified.
 
 tsx ts-node-dev --respawn src/install-typescript.ts
+
+--respawn 
+本来なら「一度実行してすぐ終了するタイプ」のスクリプトでも、プロセスを終了させずに待機し、ソースコードの変更を監視して再実行する
+
 止める
 control + c
 
