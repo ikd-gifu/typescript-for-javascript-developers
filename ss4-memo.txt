@@ -57,3 +57,11 @@ https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
 
 tsconfig.jsonを作成
 npx tsc --init
+
+/src/any.ts実行でエラーが出る
+package.jsonで "type": "commonjs"　プロジェクトはCommonJSモード
+tsconfig.jsonでは "verbatimModuleSyntax": true
+この設定の組み合わせで、export {} のようなESモジュールの構文を使うと、
+TypeScriptはCommonJSファイルでESモジュールの構文を書いていると判断してエラー
+
+"verbatimModuleSyntax": false にし、ts-node-devが動作する環境としておく
