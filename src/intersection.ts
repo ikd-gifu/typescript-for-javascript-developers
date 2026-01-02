@@ -27,4 +27,4 @@ type TwoWayPlayer = Pitcher1 & Batter1; // Intersection Typesにより、2つの
 const OtaniShouhei: TwoWayPlayer = {
   throwingSpeed: 165,
   battingAverage: 0.286
-}
+};
