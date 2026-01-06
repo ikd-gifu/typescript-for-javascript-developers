@@ -1,5 +1,7 @@
 export {};
 
+// アロー関数：無名関数のfunctionキーワードを省略し、矢印（=>）を用いて関数を定義する
+// 引数が一つなら()も省略可能、処理が一行なら波括弧({})とreturnも省略可能
 let bmi: (height: number, weight: number) => number = (height: number, weight: number): number => {
   return weight / (height * height);
 }

@@ -1,5 +1,6 @@
 export {};
 
+// 無名関数 識別子（関数名）がない関数式
 let bmi: (height: number, weight: number) => number = function(height: number, weight: number): number {
   return weight / (height * height); // 無名関数自体にも型注釈をつける
 };
