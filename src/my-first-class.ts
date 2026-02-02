@@ -1,7 +1,7 @@
 export {};
 
 class Person { // クラス定義
-  name: string;
+  name: string; // JSにおいては事前宣言は不要だが、TSでは必要
   age: number;
   
   constructor(name: string, age: number) { // コンストラクタ　戻り値には型指定しない　returnしないため。voidも不要
