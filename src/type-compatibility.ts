@@ -18,7 +18,7 @@ let barImCompatible: number = 1;
 let fooString: string;
 let barString: string = 'string';
 
-fooString = barString; // 同じ型なので代入可能
+// fooString = barString; // 同じ型なので代入可能
 
 let fooStringLiteral: 'fooStringLiteral' = 'fooStringLiteral';
 fooString = fooStringLiteral; // 文字列リテラル型は文字列型の集合の一部だから代入可能
