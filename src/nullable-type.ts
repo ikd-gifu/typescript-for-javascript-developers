@@ -6,7 +6,7 @@ export {};
 //   age: null // 型 'null' を型 'number' に割り当てることはできません。ts(2322)
 // nullable-type.ts(4, 30): 予期された型は、型 '{ name: string; age: number; }' 
 // に対してここで宣言されたプロパティ 'age' から取得されています
-};
+// };
 // tsconfig.jsonで"strictNullChecks": false,を設定するとエラーが消える
 // ただし、他でもnullが許容されてしまう（nullableな状態）ため推奨されない
 // profile = null;
