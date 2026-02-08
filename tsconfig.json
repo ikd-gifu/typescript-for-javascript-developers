@@ -33,7 +33,9 @@
     // "noPropertyAccessFromIndexSignature": true,
 
     // Recommended Options
+    // strictNullChecks も自動的に有効化される(strictNullChecks: true と同じ)
     "strict": true,
+    // "strictNullChecks": false, // 一般には無効化しない
     "jsx": "react-jsx",
     "verbatimModuleSyntax": false,
     "isolatedModules": true,
