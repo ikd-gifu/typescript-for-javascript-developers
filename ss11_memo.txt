@@ -1,0 +1,16 @@
+この教材は
+% node -v
+v24.12.0
+
+nvm install 12.14.1
+nvm alias default 12.14.1
+nvm use 12.14.1
+node -v で確認
+
+一時的に切り替える場合
+nvm use 12.14.1
+nvm use 24 12.0
+
+システム全体のデフォルト設定を変更
+nvm alias default 12.14.1
+nvm alias default 24 12.0
